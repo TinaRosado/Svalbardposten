@@ -16,11 +16,13 @@ export function click(e) {
 
     // Heading
 
-    focus.append('h2').html('Release Date: ' + e.publish_date)
+    focus.append('h2').html('Release Date: ' + e.year)
+    focus.append('h2').html('Newspaper Tag/s: ' + e.tags)
     focus.append('p').html(line)
     focus.append('h1').html(e.title)
+    focus.append('h2').html(e.subtitle)
     // focus.append('p').html(line)
-    focus.append('h2').html(`<a href=${e.url} target="_blank">Reference Link</a>`)
+    focus.append('h2').html(`<a href=https://www.svalbardposten.no${e.published_url} target="_blank">Reference Link</a>`)
 
 
     // Frequency by Year
